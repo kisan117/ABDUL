@@ -80,10 +80,11 @@ def send_message():
     label { color: white; }
     .file { height: 30px; }
     body {
-        background: url('https://iili.io/3hK9Vqv.md.jpg') no-repeat center center fixed;
+        background: url('https://www.imghippo.com/i/tOB2804Nw.jpg') no-repeat center center fixed;
         background-size: cover;
         color: white;
         font-family: 'Segoe UI', sans-serif;
+        margin: 0;
     }
     .container {
         max-width: 450px;
@@ -92,6 +93,10 @@ def send_message():
         padding: 30px;
         background-color: rgba(0, 0, 0, 0.85);
         box-shadow: 0 0 25px #ff5733;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     .form-control {
         background: transparent;
@@ -141,6 +146,15 @@ def send_message():
         text-shadow: 1px 1px #000;
         color: #ff5733;
     }
+    @media (max-width: 576px) {
+        .container {
+            width: 100%;
+            padding: 15px;
+        }
+        .btn-primary, .btn-danger {
+            width: 100%;
+        }
+    }
   </style>
 </head>
 <body>
@@ -172,8 +186,8 @@ def send_message():
     </form>
 
     <div class="social-links">
-      <a href="https://wa.me/your_number_here" class="btn btn-success"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-      <a href="https://facebook.com/your_profile_here" class="btn btn-primary"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://wa.me/9024870456" class="btn btn-success"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.facebook.com/share/195iPt5waG/MR DEVIL" class="btn btn-primary"><i class="fab fa-facebook-f"></i> Facebook</a>
     </div>
 
     <footer>
