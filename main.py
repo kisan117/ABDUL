@@ -73,87 +73,111 @@ def send_message():
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>𝗗𝗘𝗩𝗜𝗟 𝗦𝗛𝗔𝗥𝗔𝗕𝗜</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
+    /* General Styles */
+    body {
+      background: url('https://www.imghippo.com/i/tOB2804Nw.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .container {
+      max-width: 500px;
+      border-radius: 20px;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.85);
+      box-shadow: 0 0 25px #ff5733;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     label { color: white; }
     .file { height: 30px; }
-    body {
-        background: url('https://www.imghippo.com/i/tOB2804Nw.jpg') no-repeat center center fixed;
-        background-size: cover;
-        color: white;
-        font-family: 'Segoe UI', sans-serif;
-        margin: 0;
-    }
-    .container {
-        max-width: 450px;
-        margin-top: 30px;
-        border-radius: 20px;
-        padding: 30px;
-        background-color: rgba(0, 0, 0, 0.85);
-        box-shadow: 0 0 25px #ff5733;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
+
     .form-control {
-        background: transparent;
-        border: 1.5px solid #ff5733;
-        color: white;
-        margin-bottom: 15px;
-        border-radius: 10px;
+      background: transparent;
+      border: 1.5px solid #ff5733;
+      color: white;
+      margin-bottom: 15px;
+      border-radius: 10px;
     }
+
     .btn-primary {
-        background-color: #ff5733;
-        border: 1px solid #ff5733;
-        border-radius: 30px;
-        font-weight: bold;
+      background-color: #ff5733;
+      border: 1px solid #ff5733;
+      border-radius: 30px;
+      font-weight: bold;
     }
+
     .btn-primary:hover {
-        background-color: #ff7043;
-        border-color: #ff7043;
+      background-color: #ff7043;
+      border-color: #ff7043;
     }
+
     .btn-danger {
-        background-color: #c0392b;
-        border: 1px solid #c0392b;
-        border-radius: 30px;
-        width: 100%;
-        font-weight: bold;
+      background-color: #c0392b;
+      border: 1px solid #c0392b;
+      border-radius: 30px;
+      width: 100%;
+      font-weight: bold;
     }
+
     .btn-danger:hover {
-        background-color: #e74c3c;
+      background-color: #e74c3c;
     }
+
     .social-links {
-        margin-top: 15px;
+      margin-top: 15px;
     }
+
     .social-links a {
-        display: inline-block;
-        margin: 10px;
-        text-decoration: none;
-        font-weight: bold;
+      display: inline-block;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
     }
+
     .social-links .btn {
-        border-radius: 30px;
-        padding: 10px 20px;
-        font-size: 16px;
+      border-radius: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
     }
+
     footer {
-        margin-top: 20px;
-        font-size: 14px;
-        font-weight: bold;
-        text-shadow: 1px 1px #000;
-        color: #ff5733;
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      text-shadow: 1px 1px #000;
+      color: #ff5733;
     }
+
+    /* Mobile Responsive Styles */
     @media (max-width: 576px) {
-        .container {
-            width: 100%;
-            padding: 15px;
-        }
-        .btn-primary, .btn-danger {
-            width: 100%;
-        }
+      .container {
+        width: 90%;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+
+      .btn-primary, .btn-danger {
+        width: 100%;
+      }
+
+      .form-control {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
